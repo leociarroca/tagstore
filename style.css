@@ -205,7 +205,7 @@ footer {
 
 /* hacemos el contenedor de productos */
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
 
  
     .productscont {
@@ -261,7 +261,7 @@ footer {
     }
 
     .divfoot3 {
-        font-size: 20px;
+        font-size: 17px;
         width: 15em;
         height: 1em;
     }
