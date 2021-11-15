@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f66d80b83.js" crossorigin="anonymous"></script> 
+    <title>Formulario de contacto</title>
+</head>
+<body>
+
+    <header class="headercont">
+        <h1>THE REAL F1 STORE</h1>
+
+        
+        <div>
+            <img src="./ASSETS/LOGO.png" alt="">
+        </div>
+        
+        
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <span><a href="/index.html">INICIO</a></span>
+                </li>
+                <li>
+                    <span><a href="/nosotros.html">NOSOTROS</a></span>
+                </li>
+                <li>
+                    <span> <a href="/index.html#relojes">RELOJES</a></span>
+                </li>
+                <li>
+                    <span><a href="form.html">CONTACTO</a></span>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <div class="divform">
+        <form>
+            <input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" required
+                autofocus />
+
+            <input name="email" type="email" placeholder="Correo electrónico" required />
+            
+            <textarea name="consulta" placeholder="¿Cuál es el motivo de tu consulta?" rows="6" required></textarea>
+            
+            <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
