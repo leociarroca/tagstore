@@ -1,0 +1,282 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* definimos variables de colores */
+
+:root {
+    --main-color-color1: #008859;
+    --main-color-color2: #E4182D;
+    --main-color-color3: #F6A41C;
+    --main-color-color4: #7b7777;
+    --main-color-color5: #bfb6b6;
+    --main-color-color6: #dbc8c8;
+}
+
+h1 {
+    display: none;
+}
+
+
+.headercont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 4em;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17em;
+    height: 4em;
+    
+}
+
+.menu {
+    display: flex;
+    margin: 2%;
+    height: 23%;
+    width: 36%;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li:hover {
+    background-color: var(--main-color-color3);    
+}
+
+section {
+    display: flex;
+}
+
+.watch1 {
+    width: 100%;
+    display: flex;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.productscont {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30em;
+}
+
+.imagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 20em;
+    height: 20em;
+    padding: 1%;
+    margin: 1%;
+    border-width: 1px;
+    border-style: solid;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    
+}
+
+.image {
+    display: flex;
+    width: 40%;
+    height: 80%;
+}
+
+.footer {
+    display: flex;
+}
+
+form {
+    display: flex;
+    height: 233px;
+    width: 500px;
+    background-color: #E7E7E7;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+
+}
+
+.divform {
+    background-color: #E7E7E7;
+    display: flex;
+}
+
+button {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2e518b; /*color botón*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
+    
+.textboton {
+    -moz-text-decoration-color: white;
+    color: white;
+    
+    
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.divfoot1 {
+    
+
+    display: flex;
+    color: white;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 8em;
+    height: 3.5em;
+    width: 1em;
+    height: 1em;
+}
+
+.divfoot2 {
+    
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 1.5ex;
+    width: 1em;
+    height: 1em;
+
+}
+
+.divfoot3 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 1.5ex;
+    width: 1em;
+    height: 1em;
+   
+
+}
+
+
+/* hacemos el contenedor de productos */
+
+@media (max-width: 360px) {
+
+ 
+    .productscont {
+        flex-direction: column;
+    }
+
+    .headercont {
+        flex-wrap: initial;
+        flex-direction: unset;
+    }
+
+    header img {
+        width: 10em;
+    }
+
+    .menu {
+        
+        margin: 3%;
+        height: 62%;
+        width: 158%;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .productscont {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 68em;
+    }
+
+    footer {
+        display: flex;
+        background-color: black;
+        width: 100%;
+        height: 164px;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    
+.divfoot1 {
+    width: 6em;
+    height: 2em;
+}
+
+.divfoot2 {
+    
+
+    width: 16em;
+    height: 7em;
+
+}
+
+.divfoot3 {
+    
+    font-size: 20px;
+    width: 15em;
+    height: 1em;
+   
+
+}
+
+
+
+
+
+
+
+}
