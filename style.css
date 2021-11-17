@@ -211,6 +211,29 @@ footer {
 
 }
 
+/*SECCION NOSOTROS*/
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--main-color-color1);
+}
+
+
+.nosotrosimg {
+    width: 50px;
+    height: 90px;
+}
+
+.divblack {
+
+}
+
 
 /* hacemos el contenedor de productos */
 
@@ -291,7 +314,21 @@ footer {
         
     }
 
-}
+    .nosotrosimg {
+        width: 360px;
+        height: 303px;
+    }
+
+    .divblack {
+        background-color: black;
+        width: 100vh;
+        height: 100vh;
+        margin: -2%;
+    }
+
+    .texto-encima {
+        top: 313px;
+    }
 
 @media (max-width:1920) {
     
