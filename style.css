@@ -327,7 +327,9 @@ footer {
 
  
     .texto-encima {
-        top: 256px;
+        top: 230px;
+       /*  height: 100px;
+        width: 100px; */
     }
 
     .divblack {
