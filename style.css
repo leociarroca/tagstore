@@ -30,7 +30,7 @@ h1 {
     width: 100%;
     height: 4em;
     font-family: 'Bebas Neue', cursive;
-    background-color: var(--main-color-color1);
+    background-color: var(--main-color-color3);
 }
 
 header img {
@@ -58,21 +58,24 @@ header img {
 }
 
 nav ul li:hover {
-    background-color: var(--main-color-color3);    
-}
-
-section {
-    display: flex;
-    background-color: black;
-    width: 100%;
-    height: 100%;
+    background-color: var(--main-color-color2);    
 }
 
 .watch1 {
-    width: 100%;
-    display: flex;
+ max-width: 100%;
+ display: flex;
 }
 
+section {
+    background-color: black;
+}
+
+.divreloj1 {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 20em;
+}
 
 .logocont {
     display: flex;
@@ -150,14 +153,19 @@ form {
 }
 
 button {
-    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
-    padding: 10px; /*espacio alrededor texto*/
-    background-color: #2e518b; /*color botón*/
-    text-decoration: none; /*decoración texto*/
-    text-transform: uppercase; /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
-    border-radius: 50px; /*bordes redondos*/
-    }
+    border: 1px solid #2e518b;
+    /*anchura,estiloycolorborde*/padding: 10px;
+    /*espacioalrededortexto*/background-color: #2e518b;
+    /*colorbotón*/text-decoration: none;
+    /*decoracióntexto*/text-transform: uppercase;
+    /*capitalizacióntexto*/font-family: 'Helvetica', sans-serif;
+    /*tipografíatexto*/border-radius: 10px;
+     /*bordes redondos*/    :;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
     
 .textboton {
     -moz-text-decoration-color: white;
@@ -314,17 +322,6 @@ footer {
         height: 1em;
     }
 
-    .watch1 {
-        width: 100%;
-        height: 57%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        
-    }
-
     .nosotrosimg {
         
         height: 280px;
@@ -338,16 +335,11 @@ footer {
         width: 100px; */
     }
 
-    .divblack {
-        width: 102%;
-        height: 100%;
-        margin: -2%;
-    }
-
-    section {
+    .divreloj1 {
+        display: flex;
+        background-color: black;
         width: 100%;
-        height: 91vh;
-        align-items: center;
+        height: 24em;
     }
 
 @media (max-width:1920) {
