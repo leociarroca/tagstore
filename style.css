@@ -14,7 +14,7 @@
 }
 
 a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ h1 {
     width: 100%;
     height: 4em;
     font-family: 'Bebas Neue', cursive;
-    background-color: var(--main-color-color4);
+    background-image: linear-gradient(to bottom, #ffffff, #e7e7e7, #cfcfd0, #b8b8b8, #a1a1a2, #8b8b8c, #767677, #616162, #494949, #323132, #1c1c1c, #000000);
 }
 
 header img {
@@ -39,6 +39,10 @@ header img {
     align-items: center;
     width: 17em;
     height: 4em;  
+}
+
+.imagenlogo {
+    color: #E7E7E7;
 }
 
 
@@ -127,9 +131,11 @@ section {
     height: 80%;
 }
 
-.footer {
-    display: flex;
-}
+
+
+i {
+        font-size: 18px;
+    }
 
 form {
     display: flex;
@@ -175,7 +181,7 @@ button {
 
 footer {
     display: flex;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #000000, #252425, #454345, #676569, #8a898f);
     width: 100%;
     height: 100px;
     justify-content: space-evenly;
@@ -227,6 +233,9 @@ footer {
     position: relative;
     display: inline-block;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
     
 }
 .texto-encima{
@@ -253,7 +262,7 @@ footer {
 
 /* hacemos el contenedor de productos */
 
-@media (max-width: 800px) {
+    @media (max-width: 800px) {
 
  
     .productscont {
@@ -333,8 +342,65 @@ footer {
        /*  height: 100px;
         width: 100px; */
     }
+}
+
 
   
-@media (max-width:1920) {
+@media (min-width:801px) and (max-width:1900px) {
+
+    .headercont {
+        height: 8em;
+    }
+
+    .logocont {
+        align-items: center;
+    }
+
+    .menu {
+        margin: 3%;
+        width: 48%;
+    }
     
+    i {
+        font-size: 30px;
+    }
+
+    footer {
+        
+        height: 180px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .divfoot1 {
+        align-items: flex-end;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 43em;
+        height: 0em;
+    }
+    
+    .divfoot2 {   
+        font-size: 1.5ex;
+        width: 37em;
+        height: 0em;
+    }
+    
+    .divfoot3 {        
+        font-size: 3.5ex;
+        width: 15em;
+        height: 1em;
+    }
+
+    .nosotrosimg {
+        height: 519px;
+    }
+
+    .texto-encima {
+        top: 234px;
+        left: 474px;
+        font-size: 20px;
+    }
+
 }
