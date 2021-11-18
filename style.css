@@ -155,6 +155,7 @@ form {
 .divform {
     background-color: #E7E7E7;
     display: flex;
+    margin: 2%;
 }
 
 button {
@@ -228,6 +229,8 @@ footer {
 
 }
 
+/* menu hamburguesa */
+
 /*SECCION NOSOTROS*/
 .contenedor{
     position: relative;
@@ -236,6 +239,7 @@ footer {
     width: 100%;
     height: 100%;
     background-color: black;
+    
     
 }
 .texto-encima{
@@ -260,7 +264,10 @@ footer {
 }
 
 
-/* hacemos el contenedor de productos */
+/* OAG LOGIN */
+.contenedorlogin {
+    display: flex;
+}
 
     @media (max-width: 800px) {
 
@@ -342,11 +349,15 @@ footer {
        /*  height: 100px;
         width: 100px; */
     }
+
+    .contenedorlogin {
+        flex-direction: column;
+    }
 }
 
 
   
-@media (min-width:801px) and (max-width:1900px) {
+@media (min-width:801px) and (max-width:1279px) {
 
     .headercont {
         height: 8em;
@@ -399,9 +410,70 @@ footer {
     }
 
     .texto-encima {
-        top: 234px;
-        left: 474px;
-        font-size: 20px;
+        top: 168px;
+        left: 223px;
+        font-size: 31px;
     }
 
+    .contenedorlogin {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width:1280px) and (max-width:2500px) {
+    .nosotrosimg {
+        height: 588px;
+    }
+
+    .texto-encima {
+        top: 168px;
+        left: 235px;
+        font-size: 31px;
+    }
+
+    i {
+        font-size: 30px;
+    }
+
+    footer {
+        
+        height: 180px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .divfoot1 {
+        align-items: flex-end;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 43em;
+        height: 0em;
+    }
+    
+    
+    .divfoot2 {   
+        font-size: 1.5ex;
+        width: 37em;
+        height: 0em;
+    }
+    
+    .divfoot3 {        
+        font-size: 3.5ex;
+        width: 15em;
+        height: 1em;
+    }
+
+    .nosotrosimg {
+        height: 519px;
+    }
+
+    .contenedorlogin {
+        justify-content: space-evenly;
+    }
+
+    .headercont {
+        height: 5em;
+    }
 }
