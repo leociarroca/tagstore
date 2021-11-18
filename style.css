@@ -352,6 +352,7 @@ footer {
 
     .contenedorlogin {
         flex-direction: column;
+        margin: 2%;
     }
 }
 
